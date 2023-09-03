@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/eLearning_Academy_reactjs/static/css/main.21341e64.css",
+    "main.js": "/eLearning_Academy_reactjs/static/js/main.76794447.js",
+    "static/media/banner.jpg": "/eLearning_Academy_reactjs/static/media/banner.20e168792c18d9854542.jpg",
+    "static/media/elearning-logo.png": "/eLearning_Academy_reactjs/static/media/elearning-logo.4fba73d6b426a50cfc39.png",
+    "index.html": "/eLearning_Academy_reactjs/index.html",
+    "main.21341e64.css.map": "/eLearning_Academy_reactjs/static/css/main.21341e64.css.map",
+    "main.76794447.js.map": "/eLearning_Academy_reactjs/static/js/main.76794447.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.21341e64.css",
+    "static/js/main.76794447.js"
+  ]
+}
