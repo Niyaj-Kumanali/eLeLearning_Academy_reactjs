@@ -1,0 +1,21 @@
+.banner {
+    margin: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.banner-txt {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    width: 400px;
+    text-align: left;
+    font-size: 1.5rem;
+    padding-bottom: 50px;
+}
+
+.banner h2 {
+    margin-bottom: 10px;
+}
