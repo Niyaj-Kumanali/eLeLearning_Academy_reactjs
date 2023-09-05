@@ -22,7 +22,7 @@ export default function Navbar() {
       <div className="nav-link">Teach on udemy</div>
       <div className="nav-link"><i className="fa-light fa-solid fa-cart-shopping"></i></div>
       <div className="nav-link"><CustomButton text="Log in" color='#000' backgroundColor='#fff' /></div>
-      <div className="nav-link"><button><strong>Sign Up</strong></button></div>
+      <div className="nav-link"><CustomButton text="Sign up" /></div>
       <div className="nav-link"><button><i className="fa-light fa-solid fa-globe"></i></button></div>
       {/* <div className="nav-link">My learning</div>
       <div className="nav-link"><i className="fa-sharp fa-regular fa-heart"></i></div>

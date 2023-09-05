@@ -1,4 +1,9 @@
+.App {
+    display: flex;
+    justify-content: center;
+}
 button{
+    min-width: 100px;
     padding: 10px 18px;
     color: #fff;
     background-color: #000;
@@ -6,7 +11,6 @@ button{
     border: 1px solid #000;
 }
 
-.homepage {
-    width: 80%;
-    background-color:aqua;
+button:hover {
+    background-color: rgb(31, 28, 28)
 }

@@ -65,3 +65,7 @@
   --color-purple-100: #f6eefc;
   --color-white: #fff;
 }
+
+body {
+  font-family: SuisseWorks,Georgia,Times,'Times New Roman',serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';
+}

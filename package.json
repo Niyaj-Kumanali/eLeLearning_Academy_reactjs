@@ -37,5 +37,22 @@
   },
   "devDependencies": {
     "gh-pages": "^6.0.0"
+  },
+  "description": "<a href=\"https://niyaj-kumanali.github.io/eLearning_Academy_reactjs/\" > click here </a>",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Niyaj-Kumanali/eLearning_Academy_reactjs.git"
+  },
+  "keywords": [
+    "learning",
+    "education",
+    "online",
+    "course"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Niyaj-Kumanali/eLearning_Academy_reactjs/issues"
   }
 }

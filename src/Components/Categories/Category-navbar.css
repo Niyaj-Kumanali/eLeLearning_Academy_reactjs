@@ -1,0 +1,17 @@
+.categories {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin: 20px 20px;
+    min-height: 50px;
+}
+.cat-nav-link {
+    font-weight: 700;
+    padding: 10px 30px;
+    opacity: 70%;
+}
+
+.cat-nav-link:hover {
+    border-bottom: 3px solid #000;
+    opacity: 100%;
+}

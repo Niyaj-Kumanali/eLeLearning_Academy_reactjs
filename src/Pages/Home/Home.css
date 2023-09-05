@@ -1,0 +1,7 @@
+.homepage {
+    width: 80vw;
+    background: color #111000;;
+    display: grid;
+    justify-content: center;
+    margin: auto;
+}

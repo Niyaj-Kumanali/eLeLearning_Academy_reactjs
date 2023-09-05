@@ -1,11 +1,6 @@
 .banner {
-    margin: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-
+    margin-bottom: 80px;
 }
-
 .banner-txt {
     position: absolute;
     top: 30%;
