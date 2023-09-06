@@ -1,17 +1,20 @@
-import react from "react";
+import React from "react";
 import './Course.css';
 
-
-export default function Course({ img, name }) {
+export default function Course({ img, name, author, price, originalPrice }) {
     return (
-        <div className="card" style={{ width: '200px' }}>
-            <img className="card-img-top" src={img} alt="Card image" />
-            <hr />
-            <div className="card-body">
-                <h4 className="card-title">{name}</h4>
-                <p className="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, suscipit!</p>
-                <a href="#" className="btn btn-primary"><button>Buy</button></a>
+        <div className="course-card">
+            <figure className="course-image">
+                <img src={img} alt={`Course: ${name}`} />
+            </figure>
+            <div className="course-details">
+                <h3 className="course-title">{name}</h3>
+                <p className="course-author">{author}</p>
+                <div className="course-price">
+                    <span className="current-price">&#8377; {price}</span>
+                    {originalPrice && <span className="original-price">&#8377; {originalPrice}</span>}
+                </div>
             </div>
         </div>
     );
-}   
+}

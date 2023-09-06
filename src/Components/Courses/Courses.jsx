@@ -1,26 +1,16 @@
-import react from "react";
+import React from "react";
 import './Courses.css';
 import Course from "../Course/Course";
+import coursesData from "../../assets/data/coursesData";
 
-import Java from '../../assets/java.png';
+const coursesData = coursesData;
 
-export default function Courses(){
+export default function Courses() {
     return (
         <div className="card-row">
-            <Course img ={Java} name="Java" />
-            <Course img ={Java} name="Java" />
-            <Course img ={Java} name="Java" />
-            <Course img ={Java} name="Java" />
-            <Course img ={Java} name="Java" />
-            <Course img ={Java} name="Java" />
-            <Course img ={Java} name="Java" />
-            <Course img ={Java} name="Java" />
-            <Course img ={Java} name="Java" />
-            <Course img ={Java} name="Java" />
-            <Course img ={Java} name="Java" />
-            <Course img ={Java} name="Java" />
-
-
+            {coursesData.map((course) => (
+                <Course key={course.id} img={course.img} name={course.name} author={course.author} price={course.price} originalPrice={course.originalPrice} />
+            ))}
         </div>
-    )
+    );
 }

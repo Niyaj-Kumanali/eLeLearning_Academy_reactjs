@@ -1,16 +1,7 @@
 .App {
     display: flex;
     justify-content: center;
-}
-button{
-    min-width: 100px;
-    padding: 10px 18px;
-    color: #fff;
-    background-color: #000;
-    font-size: 0.9rem;
-    border: 1px solid #000;
+    flex-direction: column;
 }
 
-button:hover {
-    background-color: rgb(31, 28, 28)
-}
+

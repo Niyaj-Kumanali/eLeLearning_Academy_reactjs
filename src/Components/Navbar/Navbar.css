@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    box-shadow: 2px 2px 4px #898e938f;
+    box-shadow: 2px 2px 4px 0 rgba(137, 142, 147, 0.63); /* Adjusted box shadow values */
     height: 70px;
     margin-bottom: 20px;
 }
@@ -15,10 +15,10 @@
 }
 
 .nav-link:hover {
-    color : #5624d0;
+    color: #5624d0;
 }
 
-.nav-link input{
+.nav-link input {
     background: url("https://img.icons8.com/?size=15&id=3159&format=png") left center no-repeat;
     background-color: #f3f3fdbc;
     border: 1px solid #2d2f31;
@@ -28,12 +28,11 @@
     padding-left: 60px;
     font-size: 0.9rem;
     background-position: 15px center;
-    cursor:allowed;
+    cursor: pointer; /* Updated cursor property */
     color: #2d2f318a;
-    
 }
 
-.nav img{
+.nav img {
     max-width: 180px;
     width: 150px;
     padding: 0;

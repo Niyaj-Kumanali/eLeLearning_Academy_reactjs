@@ -1,16 +1,38 @@
 .banner {
     margin-bottom: 80px;
-}
-.banner-txt {
-    position: absolute;
-    top: 30%;
-    left: 10%;
-    width: 400px;
-    text-align: left;
-    font-size: 1.5rem;
-    padding-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f8f8f8;
+    overflow: hidden;
 }
 
-.banner h2 {
+.banner-content {
+    flex: 1;
+    position: absolute;
+    padding: 20px;
+    text-align: left;
+    color: #333;
+}
+
+.banner h1 {
+    font-size: 2rem;
     margin-bottom: 10px;
 }
+
+.banner p {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+}
+
+.banner-image {
+    flex: 1;
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+
+
+
