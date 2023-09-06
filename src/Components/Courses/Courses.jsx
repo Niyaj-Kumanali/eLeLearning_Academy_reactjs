@@ -1,9 +1,9 @@
 import React from "react";
 import './Courses.css';
 import Course from "../Course/Course";
-import coursesData from "../../assets/data/coursesData";
+import courses from "../../assets/data/coursesData";
 
-const coursesData = coursesData;
+const coursesData = courses;
 
 export default function Courses() {
     return (
