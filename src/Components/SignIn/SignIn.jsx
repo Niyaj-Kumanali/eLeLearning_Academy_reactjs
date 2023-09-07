@@ -1,0 +1,23 @@
+import React from "react";
+import { Link } from "react-router-dom";
+
+import './SignIn.css';
+import CustomButton from "../Button/CustomButton";
+
+class SignIn extends React.Component {
+   
+    render(){
+        return (
+            <section className="signIn-container">
+                <h2 className="signIn-heading">Sign In</h2>
+                <input className="signIn-email" type="email" placeholder="Email" />
+                <input className="signIn-password" type="password" placeholder="Password" />
+                <p >Are you new here? <Link to="/signup">create a new account</Link></p>
+                <p><a href="/">Forgot Password?</a></p>
+                <CustomButton text="Sign In" />
+            </section>
+        )
+    }
+}
+
+export default SignIn;

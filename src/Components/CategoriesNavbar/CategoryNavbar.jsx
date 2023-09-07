@@ -1,7 +1,8 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import './CategoryNavbar.css';
 
-const categories = ["Java", "Python", "HTML", "CSS", "JavaScript"];
+const categories = ["All", "Java", "Python", "HTML", "CSS", "JavaScript"];
 
 export default function CategoryNavbar() {
     return (
@@ -9,7 +10,7 @@ export default function CategoryNavbar() {
             <ul className="category-list">
                 {categories.map((category, index) => (
                     <li key={index} className="category-item">
-                        {category}
+                        <Link to={`/category/${category}`}>{category}</Link>
                     </li>
                 ))}
             </ul>

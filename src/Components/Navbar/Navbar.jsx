@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./Navbar.css";
 import logo from "../../assets/elearning-logo.png";
 import CustomButton from "../Button/CustomButton";
@@ -16,9 +17,9 @@ export default function Navbar() {
 
   return (
     <nav className="nav">
-      <a href="/">
+      <Link to="/">
         <img src={logo} alt="E-Learning Logo" />
-      </a>
+      </Link>
       <div className="nav-link">Categories</div>
       <div className="nav-link">
         <input
@@ -35,14 +36,12 @@ export default function Navbar() {
         <i className="fa-solid fa-cart-shopping"></i>
       </div>
       <div className="nav-link">
-        <CustomButton text="Log in" color="#000" backgroundColor="#fff" />
+      <Link to="/signin"><CustomButton text="Log in" color="#000" backgroundColor="#fff" /></Link>
       </div>
       <div className="nav-link">
-        <CustomButton text="Sign up" />
+        <Link to="/signup"><CustomButton text="Sign up" /></Link>
       </div>
-      <div className="nav-link">
-        <CustomButton text={<i className="fa-solid fa-globe"></i>} color="#000" backgroundColor="#fff"/>    
-      </div>
+      
     </nav>
   );
 }

@@ -1,0 +1,26 @@
+.signUp-container {
+    width: 40vw;
+    background-color: #f8f8f8;
+    text-align: left;
+    padding: 20px;
+    overflow: hidden;
+    box-shadow: 2px 2px 2px 4px #f5f5f5;
+    margin: 10px;
+}
+
+.signUp-heading {
+    text-align: center;
+    padding: 20px;
+    
+}
+
+.signUp-email, .signUp-password, .signUp-name {
+    padding: 10px 10px;
+    width: 90%;
+    display: block;
+    margin: 10px;
+}
+
+.signUp-container p{
+    margin: 10px;
+}
