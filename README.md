@@ -17,19 +17,19 @@ eLearning Academy is an online learning platform built with React.js. It provide
 
 To run this project locally, follow these steps:
 
-1. Clone the repository
+1. Clone the repository:
     ```bash
     git clone https://github.com/Niyaj-Kumanali/eLearning_Academy_reactjs.git
 
-2. Navigate to the project directory
+2. Navigate to the project directory:
     ```bash
     cd eLearning_Academy_reactjs
 
-3. Install the project dependencies
+3. Install the project dependencies:
     ```bash
     npm install
 
-4. Start the development server
+4. Start the development server:
     ```bash
     npm start
 
