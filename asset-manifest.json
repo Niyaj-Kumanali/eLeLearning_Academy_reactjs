@@ -1,16 +1,20 @@
 {
   "files": {
-    "main.css": "/eLearning_Academy_reactjs/static/css/main.f5158c43.css",
-    "main.js": "/eLearning_Academy_reactjs/static/js/main.44c32010.js",
+    "main.css": "/eLearning_Academy_reactjs/static/css/main.00b67b40.css",
+    "main.js": "/eLearning_Academy_reactjs/static/js/main.d53a9c3b.js",
+    "static/media/python.png": "/eLearning_Academy_reactjs/static/media/python.6a5cbc319ab3ddf8ef92.png",
     "static/media/banner.jpg": "/eLearning_Academy_reactjs/static/media/banner.20e168792c18d9854542.jpg",
-    "static/media/elearning-logo.png": "/eLearning_Academy_reactjs/static/media/elearning-logo.4fba73d6b426a50cfc39.png",
+    "static/media/elearning-logo.png": "/eLearning_Academy_reactjs/static/media/elearning-logo.6b5839de2ab7a790040f.png",
     "static/media/java.png": "/eLearning_Academy_reactjs/static/media/java.f5dd86c3ef6ef3f85acf.png",
+    "static/media/html.png": "/eLearning_Academy_reactjs/static/media/html.cfb2ba4a6b1c3de295bc.png",
+    "static/media/css.png": "/eLearning_Academy_reactjs/static/media/css.4a6549b8c2b4cda8bb88.png",
+    "static/media/js.png": "/eLearning_Academy_reactjs/static/media/js.3dfb665e058d08c99f28.png",
     "index.html": "/eLearning_Academy_reactjs/index.html",
-    "main.f5158c43.css.map": "/eLearning_Academy_reactjs/static/css/main.f5158c43.css.map",
-    "main.44c32010.js.map": "/eLearning_Academy_reactjs/static/js/main.44c32010.js.map"
+    "main.00b67b40.css.map": "/eLearning_Academy_reactjs/static/css/main.00b67b40.css.map",
+    "main.d53a9c3b.js.map": "/eLearning_Academy_reactjs/static/js/main.d53a9c3b.js.map"
   },
   "entrypoints": [
-    "static/css/main.f5158c43.css",
-    "static/js/main.44c32010.js"
+    "static/css/main.00b67b40.css",
+    "static/js/main.d53a9c3b.js"
   ]
 }
