@@ -19,16 +19,20 @@ To run this project locally, follow these steps:
 
 ```bash
 # Clone the repository
-git clone https://github.com/Niyaj-Kumanali/eLearning_Academy_reactjs.git
+    ```bash
+    git clone https://github.com/Niyaj-Kumanali/eLearning_Academy_reactjs.git
 
 # Navigate to the project directory
-cd eLearning_Academy_reactjs
+    ```bash
+    cd eLearning_Academy_reactjs
 
 # Install the project dependencies
-npm install
+    ```bash
+    npm install
 
 # Start the development server
-npm start
+    ```bash
+    npm start
 
 Open your web browser and visit [http://localhost:3000](http://localhost:3000) to view the application.
 
