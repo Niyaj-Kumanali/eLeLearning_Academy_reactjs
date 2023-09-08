@@ -5,6 +5,7 @@
     box-shadow: 2px 2px 4px 0 rgba(137, 142, 147, 0.63); /* Adjusted box shadow values */
     height: 70px;
     margin-bottom: 20px;
+    width: 100vw;
 }
 
 .nav-link {
@@ -15,7 +16,8 @@
 }
 
 .nav-link:hover {
-    color: #5624d0;
+    /* color: #5624d0; */
+    color: rgb(3, 157, 3);
 }
 
 .nav-link input {
@@ -36,5 +38,5 @@
     max-width: 180px;
     width: 150px;
     padding: 0;
-    margin: 0;
+    margin: 10px 15px;
 }

@@ -10,6 +10,7 @@ class SignUp extends React.Component {
         return (
             <section className="signUp-container">
                 <h2 className="signUp-heading">Sign Up</h2>
+                <p className="signIn-subheading">Sign up and start your learning journey</p>
                 <input className="signUp-name" type="text" placeholder="Full Name"/>
                 <input className="signUp-email" type="email" placeholder="Email" />
                 <input className="signUp-password" type="password" placeholder="Enter Password" />

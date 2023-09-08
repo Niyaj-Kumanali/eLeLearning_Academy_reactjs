@@ -14,6 +14,11 @@
     
 }
 
+.signUp-subheading {
+    padding: 5px 5px;
+    font-weight: bold;
+}
+
 .signUp-email, .signUp-password, .signUp-name {
     padding: 10px 10px;
     width: 90%;

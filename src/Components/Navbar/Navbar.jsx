@@ -20,7 +20,7 @@ export default function Navbar() {
       <Link to="/">
         <img src={logo} alt="E-Learning Logo" />
       </Link>
-      <div className="nav-link">Categories</div>
+      <Link to="/category"><div className="nav-link">Categories</div></Link>
       <div className="nav-link">
         <input
           type="search"
@@ -30,18 +30,18 @@ export default function Navbar() {
           onChange={handleChange}
         />
       </div>
-      <div className="nav-link">Udemy Business</div>
-      <div className="nav-link">Teach on Udemy</div>
+      <Link to="/contact"><div className="nav-link">Contact</div></Link>
+      <Link to="/about"><div className="nav-link">About Us</div></Link>
       <div className="nav-link">
         <i className="fa-solid fa-cart-shopping"></i>
       </div>
       <div className="nav-link">
-      <Link to="/signin"><CustomButton text="Log in" color="#000" backgroundColor="#fff" /></Link>
+        <Link to="/signin"><CustomButton text="Log in" color="#000" backgroundColor="#fff" /></Link>
       </div>
       <div className="nav-link">
         <Link to="/signup"><CustomButton text="Sign up" /></Link>
       </div>
-      
+
     </nav>
   );
 }

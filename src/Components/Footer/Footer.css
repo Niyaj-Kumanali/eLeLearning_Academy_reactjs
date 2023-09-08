@@ -71,3 +71,6 @@
     font-size: 0.9rem;
     background-color: #333;
 }
+address p{
+    padding: 3px;
+}

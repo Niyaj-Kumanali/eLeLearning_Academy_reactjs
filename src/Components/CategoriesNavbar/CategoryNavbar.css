@@ -14,7 +14,8 @@
 
 .category-item {
     font-weight: bold;
-    padding: 10px 30px;
+    padding: 10px 15px;
+    margin: 10px 50px 10px 10px;
     opacity: 0.7;
     cursor: pointer;
     transition: opacity 0.3s, border-bottom 0.3s;

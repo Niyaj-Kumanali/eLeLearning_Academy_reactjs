@@ -6,11 +6,11 @@ import courses from "../../assets/data/coursesData";
 
 const coursesData = courses;
 
-export default function AllComponents({ from, to }) {
+export default function HtmlComponent({ from, to }) {
     return (
         <div className="card-row">
             {coursesData.map((course) => {
-                if (course.id >= 1 && course.id <= 50) {
+                if (course.id >= 17 && course.id <= 24) {
                     return (
                         <Link key={course.id} to={"/" + course.name}>
                             <Course

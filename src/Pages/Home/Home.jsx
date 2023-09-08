@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 
 import './Home.css';
 import Navbar from '../../Components/Navbar/Navbar';
@@ -8,29 +8,61 @@ import CategoryNavbar from '../../Components/CategoriesNavbar/CategoryNavbar';
 import Footer from '../../Components/Footer/Footer';
 import SignIn from '../../Components/SignIn/SignIn';
 import SignUp from '../../Components/SignUp/SignUp';
-import Courses from '../../Components/Courses/Courses';
-import AllComponent from '../../Components/CourseComponents/AllComponents';
+import AllComponents from '../../Components/CourseComponents/AllComponents';
+import JavaComponent from '../../Components/CourseComponents/JavaComponent';
+import PythonComponent from '../../Components/CourseComponents/PythonComponent';
+import HtmlComponent from '../../Components/CourseComponents/HtmlComponent';
+import CssComponent from '../../Components/CourseComponents/CssComponent';
+import JavaScriptComponent from '../../Components/CourseComponents/JavaScriptComponent';
 
 export default function Home() {
     return (
-        <Router>
-            <div className="home-container">
-                <Navbar />
-                <div className='homepage'>
-                    <Routes>
-
-                        <Route path="/" element={<DefaultComponent />} />
-                        <Route path="/category/*" element={<DefaultComponent />} />
-                        <Route exact path="/signin" element={<SignIn />} />
-                        <Route path="/signup" element={<SignUp />} />
-                    </Routes>
-
-
-
-                </div>
-                <Footer />
+        <div className="home-container">
+            <Navbar />
+            <div className='homepage'>
+                <Routes>
+                    <Route path="/" element={<>
+                        <DefaultComponent />
+                        <AllComponents />
+                    </>} />
+                    <Route path="/category/" element={<>
+                        <CategoryNavbar />
+                        <AllComponents />
+                    </>} />
+                    <Route path="/courses/" element={<>
+                        <CategoryNavbar />
+                        <AllComponents />
+                    </>} />
+                    <Route path="/category/all" element={<>
+                        <DefaultComponent />
+                        <AllComponents />
+                    </>} />
+                    <Route path="/category/java" element={<>
+                        <DefaultComponent />
+                        <JavaComponent />
+                    </>} />
+                    <Route path="/category/python" element={<>
+                        <DefaultComponent />
+                        <PythonComponent />
+                    </>} />
+                    <Route path="/category/html" element={<>
+                        <DefaultComponent />
+                        <HtmlComponent />
+                    </>} />
+                    <Route path="/category/css" element={<>
+                        <DefaultComponent />
+                        <CssComponent />
+                    </>} />
+                    <Route path="/category/javascript" element={<>
+                        <DefaultComponent />
+                        <JavaScriptComponent />
+                    </>} />
+                    <Route path="/signup" element={<SignUp />} />
+                    <Route path="/signin" element={<SignIn />} />
+                </Routes>
             </div>
-        </Router>
+            <Footer />
+        </div>
     );
 }
 
@@ -38,55 +70,7 @@ function DefaultComponent() {
     return (
         <>
             <Banner />
-            {/* <CategoryNavbar /> */}
-            <h1 className='topCourses'>Top Courses</h1>
-            <h2 className='heading'>Java</h2>
-            <Courses from={1} to={8} />
-            <h2 className='heading'>Python</h2>
-
-            <Courses from={9} to={16} />
-            <h2 className='heading'>HTML</h2>
-
-            <Courses from={17} to={24} />
-            <h2 className='heading'>CSS</h2>
-
-            <Courses from={25} to={32} />
-            <h2 className='heading'>JavaScript</h2>
-
-            <Courses from={33} to={40} />
-
+            <CategoryNavbar />
         </>
     );
-}
-
-
-
-function JavaComponent() {
-    return (
-        <Courses from={1} to={10} />
-    )
-}
-
-function PythonComponent() {
-    return (
-        <Courses from={11} to={20} />
-    )
-}
-
-function HtmlComponent() {
-    return (
-        <Courses from={21} to={30} />
-    )
-}
-
-function CssComponent() {
-    return (
-        <Courses from={31} to={40} />
-    )
-}
-
-function JavascriptComponent() {
-    return (
-        <Courses from={41} to={50} />
-    )
 }

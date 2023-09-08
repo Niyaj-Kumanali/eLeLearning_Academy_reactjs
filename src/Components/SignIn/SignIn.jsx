@@ -10,9 +10,11 @@ class SignIn extends React.Component {
         return (
             <section className="signIn-container">
                 <h2 className="signIn-heading">Sign In</h2>
+                <p className="signIn-subheading">Log in to your account</p>
+
                 <input className="signIn-email" type="email" placeholder="Email" />
                 <input className="signIn-password" type="password" placeholder="Password" />
-                <p >Are you new here? <Link to="/signup">create a new account</Link></p>
+                <p >Don't have an account? <Link to="/signup">Sign up</Link></p>
                 <p><a href="/">Forgot Password?</a></p>
                 <CustomButton text="Sign In" />
             </section>

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import './Footer.css';
 import logo from '../../assets/elearning-logo.png'
 
@@ -7,16 +8,16 @@ export default function Footer() {
         <footer className="footer">
             <div className="footer-content">
                 <div className="footer-logo">
-                    <a href="/"><img src={logo} alt="Company Logo" /></a>
+                    <Link to="/"><img src={logo} alt="Company Logo" /></Link>
                     <p>eLearning Academy</p>
                 </div>
                 <div className="footer-links">
                     <h4>Quick Links</h4>
                     <ul>
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/courses">Courses</a></li>
-                        <li><a href="/about">About Us</a></li>
-                        <li><a href="/contact">Contact</a></li>
+                        <li><Link to="/">Home</Link></li>
+                        <li><Link to="/courses">Courses</Link></li>
+                        <li><Link to="/about">About Us</Link></li>
+                        <li><Link to="/contact">Contact</Link></li>
                     </ul>
                 </div>
                 <div className="footer-contact">
