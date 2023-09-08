@@ -12,6 +12,10 @@ eLearning Academy is an online learning platform built with React.js. It provide
 
 - [Installation](#installation)
 - [Usage](#usage)
+- [Features](#features)
+- [Contributing](#contributing)
+- [Credits](#credits)
+- [License](#license)
 
 ## Installation
 
