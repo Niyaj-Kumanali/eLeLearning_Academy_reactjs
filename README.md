@@ -1,6 +1,6 @@
-# [eLearning Academy](https://niyaj-kumanali.github.io/eLearning_Academy_reactjs/)
+# [eLearning Academy](https://Niyaj-Kumanali.github.io/eLearning_Academy_reactjs/)
 
-[![GitHub Homepage](https://img.shields.io/badge/Homepage-Visit-<COLOR>.svg)](https://niyaj-kumanali.github.io/eLearning_Academy_reactjs)
+[![GitHub Homepage](https://img.shields.io/badge/Homepage-Visit-<COLOR>.svg)](https://Niyaj-Kumanali.github.io/eLearning_Academy_reactjs)
 [![GitHub Version](https://img.shields.io/badge/Version-0.1.0-blue.svg)](https://github.com/Niyaj-Kumanali/eLearning_Academy_reactjs/releases)
 [![License](https://img.shields.io/badge/License-ISC-green.svg)](LICENSE)
 
@@ -12,33 +12,25 @@ eLearning Academy is an online learning platform built with React.js. It provide
 
 - [Installation](#installation)
 - [Usage](#usage)
-- [Features](#features)
-- [Contributing](#contributing)
-- [Credits](#credits)
-- [License](#license)
 
 ## Installation
 
 To run this project locally, follow these steps:
 
-1. Clone the repository:
+```bash
+# Clone the repository
+git clone https://github.com/Niyaj-Kumanali/eLearning_Academy_reactjs.git
 
-   ```bash
-   git clone https://github.com/Niyaj-Kumanali/eLearning_Academy_reactjs.git
+# Navigate to the project directory
+cd eLearning_Academy_reactjs
 
-2. Navigate to the project directory:
-    ```bash
-    cd eLearning_Academy_reactjs
+# Install the project dependencies
+npm install
 
-3. Install the project dependencies:
-    ```bash
-    npm install
+# Start the development server
+npm start
 
-4. Start the development server:
-    ```bash
-    npm start
-
-5. Open your web browser and visit [http://localhost:3000](http://localhost:3000) to view the application.
+Open your web browser and visit [http://localhost:3000](http://localhost:3000) to view the application.
 
 ## Usage
 
@@ -75,4 +67,3 @@ This project is licensed under the [ISC License](LICENSE).
 ## Report a Bug
 
 If you encounter any issues or have suggestions for improvement, please [open an issue](https://github.com/Niyaj-Kumanali/eLearning_Academy_reactjs/issues) on GitHub.
-
