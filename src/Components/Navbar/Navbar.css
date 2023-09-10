@@ -1,8 +1,9 @@
+/* Default styles for desktop */
 .nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    box-shadow: 2px 2px 4px 0 rgba(137, 142, 147, 0.63); /* Adjusted box shadow values */
+    box-shadow: 2px 2px 4px 0 rgba(137, 142, 147, 0.63);
     height: 70px;
     margin-bottom: 20px;
     width: 100vw;
@@ -16,12 +17,14 @@
 }
 
 .nav-link:hover {
-    /* color: #5624d0; */
     color: rgb(3, 157, 3);
 }
 
+.search-container {
+    position: relative;
+}
+
 .nav-link input {
-    background: url("https://img.icons8.com/?size=15&id=3159&format=png") left center no-repeat;
     background-color: #f3f3fdbc;
     border: 1px solid #2d2f31;
     width: 650px;
@@ -30,8 +33,24 @@
     padding-left: 60px;
     font-size: 0.9rem;
     background-position: 15px center;
-    cursor: pointer; /* Updated cursor property */
+    cursor: pointer;
     color: #2d2f318a;
+    outline: none;
+}
+
+.search-button {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.search-button i {
+    font-size: 1.2rem;
+    color: #000;
 }
 
 .nav img {
@@ -39,4 +58,31 @@
     width: 150px;
     padding: 0;
     margin: 10px 15px;
+}
+
+/* Responsive adjustments for mobile */
+@media screen and (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .nav-link {
+        margin-bottom: 10px;
+        padding: 0;
+    }
+
+    .nav-link input {
+        width: 100%;
+        padding-left: 15px;
+        font-size: 0.9rem;
+    }
+
+    .search-button {
+        position: relative;
+        transform: none;
+        top: 0;
+        margin-top: 10px;
+    }
 }

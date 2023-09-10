@@ -1,10 +1,10 @@
+/* Default styles for desktop */
 .banner {
     margin-bottom: 80px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: #f8f8f8;
-    overflow: hidden;
 }
 
 .banner-content {
@@ -31,8 +31,32 @@
     height: auto;
 }
 
+/* Responsive adjustments for mobile */
+@media screen and (max-width: 768px) {
+    .banner {
+        flex-direction: column-reverse;
+        text-align: center;
+        position: relative;
+    }
 
+    .banner-content {
+        position: absolute;
+        padding: 20px 0;
+        bottom: 25%;
+    }
 
+    .banner h1 {
+        font-size: 1.5rem;
+        margin-bottom: 5px; /* Adjusted margin for smaller screens */
+    }
 
+    .banner p {
+        font-size: 1rem;
+        margin-bottom: 15px; /* Adjusted margin for smaller screens */
+    }
 
-
+    .banner-image {
+        max-width: 80%;
+        margin-top: 20px;
+    }
+}

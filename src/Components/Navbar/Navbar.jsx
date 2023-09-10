@@ -5,14 +5,24 @@ import logo from "../../assets/elearning-logo.png";
 import CustomButton from "../Button/CustomButton";
 
 export default function Navbar() {
-  const [value, setValue] = useState("");
+  const [searchValue, setSearchValue] = useState(""); 
 
   const handleChange = (event) => {
-    setValue(event.target.value);
+    setSearchValue(event.target.value); 
   };
 
-  const handleClick = () => {
-    setValue("");
+  const handleSearch = () => {
+    if (searchValue.trim() !== "") {
+      console.log("Searching for:", searchValue);
+    } else {
+      console.log("Search value is empty.");
+    }
+  };
+
+  const handleKeyPress = (event) => {
+    if (event.key === "Enter") {
+      handleSearch();
+    }
   };
 
   return (
@@ -20,28 +30,42 @@ export default function Navbar() {
       <Link to="/">
         <img src={logo} alt="E-Learning Logo" />
       </Link>
-      <Link to="/category"><div className="nav-link">Categories</div></Link>
+      <Link to="/category">
+        <div className="nav-link">Categories</div>
+      </Link>
       <div className="nav-link">
-        <input
-          type="search"
-          placeholder="Search for Anything"
-          value={value}
-          onClick={handleClick}
-          onChange={handleChange}
-        />
+        <div className="search-container">
+          <input
+            type="search"
+            placeholder="Search for Anything"
+            value={searchValue}
+            onChange={handleChange}
+            onKeyPress={handleKeyPress} 
+          />
+          <button onClick={handleSearch} className="search-button">
+            <i className="fa-solid fa-search"></i>
+          </button>
+        </div>
       </div>
-      <Link to="/contact"><div className="nav-link">Contact</div></Link>
-      <Link to="/about"><div className="nav-link">About Us</div></Link>
+      <Link to="/contact">
+        <div className="nav-link">Contact</div>
+      </Link>
+      <Link to="/about">
+        <div className="nav-link">About Us</div>
+      </Link>
       <div className="nav-link">
         <i className="fa-solid fa-cart-shopping"></i>
       </div>
       <div className="nav-link">
-        <Link to="/signin"><CustomButton text="Log in" color="#000" backgroundColor="#fff" /></Link>
+        <Link to="/signin">
+          <CustomButton text="Log in" color="#000" backgroundColor="#fff" />
+        </Link>
       </div>
       <div className="nav-link">
-        <Link to="/signup"><CustomButton text="Sign up" /></Link>
+        <Link to="/signup">
+          <CustomButton text="Sign up" />
+        </Link>
       </div>
-
     </nav>
   );
 }
