@@ -21,6 +21,10 @@ export default function Home() {
             <Navbar />
             <div className='homepage'>
                 <Routes>
+                    <Route path="/eLearning_Academy_reactjs/" element={<>
+                        <DefaultComponent />
+                        <AllComponents />
+                    </>} />
                     <Route path="/" element={<>
                         <DefaultComponent />
                         <AllComponents />
