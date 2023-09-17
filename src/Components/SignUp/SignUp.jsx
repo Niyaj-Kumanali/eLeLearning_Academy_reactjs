@@ -1,7 +1,6 @@
 import React from "react";
 
 import './SignUp.css';
-import CustomButton from "../Button/CustomButton";
 import { Link } from "react-router-dom";
 
 class SignUp extends React.Component {
@@ -17,7 +16,7 @@ class SignUp extends React.Component {
                 <input className="signUp-password" type="password" placeholder="Confirm Password" />
 
                 <p >Already have a account? <Link to="/signin">sign in</Link></p>
-                <CustomButton text="Sign In" />
+                <button className="myButton"><strong>Sign In</strong></button>
             </section>
         )
     }

@@ -2,13 +2,12 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 import logo from "../../assets/elearning-logo.png";
-import CustomButton from "../Button/CustomButton";
 
 export default function Navbar() {
-  const [searchValue, setSearchValue] = useState(""); 
+  const [searchValue, setSearchValue] = useState("");
 
   const handleChange = (event) => {
-    setSearchValue(event.target.value); 
+    setSearchValue(event.target.value);
   };
 
   const handleSearch = () => {
@@ -40,7 +39,7 @@ export default function Navbar() {
             placeholder="Search for Anything"
             value={searchValue}
             onChange={handleChange}
-            onKeyPress={handleKeyPress} 
+            onKeyPress={handleKeyPress}
           />
           <button onClick={handleSearch} className="search-button">
             <i className="fa-solid fa-search"></i>
@@ -58,12 +57,12 @@ export default function Navbar() {
       </div>
       <div className="nav-link">
         <Link to="/signin">
-          <CustomButton text="Log in" color="#000" backgroundColor="#fff" />
+          <button className="myButton"><strong>Log In</strong></button>
         </Link>
       </div>
       <div className="nav-link">
         <Link to="/signup">
-          <CustomButton text="Sign up" />
+        <button className="myButton"><strong>Sign Up</strong></button>
         </Link>
       </div>
     </nav>
