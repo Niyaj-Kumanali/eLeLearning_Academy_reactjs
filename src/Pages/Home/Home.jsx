@@ -14,8 +14,9 @@ import PythonComponent from '../../Components/CourseComponents/PythonComponent';
 import HtmlComponent from '../../Components/CourseComponents/HtmlComponent';
 import CssComponent from '../../Components/CourseComponents/CssComponent';
 import JavaScriptComponent from '../../Components/CourseComponents/JavaScriptComponent';
+import UserAccount from '../userAccount/UserAccount';
 
-export default function Home() {
+export default function Home(props) {
     return (
         <div className="home-container">
             <Navbar />
@@ -63,6 +64,8 @@ export default function Home() {
                     </>} />
                     <Route path="/signup" element={<SignUp />} />
                     <Route path="/signin" element={<SignIn />} />
+                    <Route path="/account" element={<UserAccount />} />
+
                 </Routes>
             </div>
             <Footer />

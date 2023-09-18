@@ -1,14 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
 import './SignIn.css';
+import userData from '../../assets/data/userData'
 
 class SignIn extends React.Component {
-    state = {
-        email: "",
-        password: ""
+    constructor(){
+        super();
+        this.state = userData;
     }
+    
     render() {
+
         const handleEmailChange = (e) => {
             this.setState({
                 email: e.target.value
@@ -24,9 +26,15 @@ class SignIn extends React.Component {
         const handleSubmit = () => {
             if (this.state.email === "niyaj@gmail.com" && this.state.password === "niyaj123") {
                 alert("The user is successfully logged in");
+                this.setState({
+                    toAddress:"/account"
+                })
             }
             else {
                 alert("Check your email or password");
+                this.setState({
+                    toAddress:"/account"
+                })
             }
         }
         return (
@@ -38,9 +46,9 @@ class SignIn extends React.Component {
                 <input className="signIn-password" type="password" placeholder="Password" value={this.state.password} onChange={handlePasswordChange} />
                 <p >Don't have an account? <Link to="/signup">Sign up</Link></p>
                 <p><a href="/">Forgot Password?</a></p>
-                <button className="myButton" onClick={handleSubmit}>
+                <Link to={this.state.toAddress} ><button className="myButton" onClick={handleSubmit}>
                     <strong>Sign In</strong>
-                </button>
+                </button></Link>
             </section>
         )
     }
